@@ -2,11 +2,12 @@ package main
 
 import (
     "fmt"
+    "testing"
     "github.com/ShiinaOrez/GoSecurity/security"
 )
 
-func main() {
-    password := "Muxi4ever"
+func test(t *testing.T) {
+    password := "muxi304"
     passwordHash := security.GeneratePasswordHash(password)
     fmt.Println(passwordHash)
     fmt.Println(security.CheckPasswordHash(password, passwordHash))
